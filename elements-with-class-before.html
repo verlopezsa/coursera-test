@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elements with class Selector</title>
+	<style>
+		/* all with class="highlight" */
+		.highlight {
+			background-color: green;
+		}
+
+		/* all p elements with class="highlight" */
+		p.higlight {
+			font-style: italic;
+		}
+
+		/* all elements with class="highlight" as well as with class="maintPoint" */
+		.highlight.maintPoint {
+			color : red;
+			background-color: black;
+		}
+			</style> 
+</head>
+<body>
+	<h1 class="highlight">Element with class Selector</h1>
+	<p>En los tiempos que corren no se puede salir a la calle al menos que vayas a comprar pan o a 
+	sacar al perro a pasear. Son tiempos dificiles que esperemos que pasen pronto.</p>
+	<p class="highlight">This is P with class="highlight</p>
+	<div class="maintPoint highlight">Este es el punto principal de todo el artículo.</div>
+
+</body>
+</html>
