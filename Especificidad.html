@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Herencia en CSS</title>
+	<style>
+		header.navigation  p {  /* especifica dos selectors por eso entre este y el de abajo
+			                     p.plurb CSS escribiría de azul. */
+			color: blue;
+		}
+		p.blurb {
+			color: red;
+		}
+
+		/* si añadimos el siguiente selector que es uno con lo de important!
+		   CSS pintaría de verde px con lo de important prevalece. */
+		p {
+			color: green !important; 
+		}
+	</style>
+</head>
+<body>
+	<header class="navigation">
+		<p class="blurb">El coronavirus es la pandemia del siglo XXI que está afectando  todo el mundo. Se han tomado medidas sin precedentes de confinamient en casa, permaneciendo así millones de personas a lo largo del mundo.</p>
+	</header>
+
+</body>
+</html>
